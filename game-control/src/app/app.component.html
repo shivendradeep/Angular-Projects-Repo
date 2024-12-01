@@ -1,0 +1,3 @@
+<app-game-control (emitCurrentCount)="getCurrentCount($event)"></app-game-control>
+<app-even *ngIf="countVal%2===0" [countval]="countVal"></app-even>
+<app-odd *ngIf="countVal%2!==0" [countval]="countVal"></app-odd>
