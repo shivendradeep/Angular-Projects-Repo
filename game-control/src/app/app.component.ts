@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  countVal!: number;
+  //countVal!: number;
+  evenNumbers: number[] = [];
+  oddNumbers: number[] = [];
   title = 'game-control';
   getCurrentCount(count: number) {
-    this.countVal = count;
+    if (count % 2 == 0) this.evenNumbers.push(count);
+    else this.oddNumbers.push(count);
   }
 }
